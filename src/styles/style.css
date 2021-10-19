@@ -1,0 +1,359 @@
+
+
+#app-login-btn {
+  width: 160px;
+}
+
+.div-taskListHeader
+{
+  margin-left: 15px;
+  margin-top: 8px;
+}
+.userContainer,
+.taskContainer
+{
+  align-items:flex-start;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  font-size: 18px;
+  
+  flex-wrap: wrap;
+  background-color:#0079BF;
+  height: 535px;
+  overflow-y:auto;
+}
+.userContainer
+{display: none;}
+.taskContainer
+{display: flex;}
+.div-userRange
+{
+  position: relative;
+  width: 600x;
+  min-width: 600px;
+  background-color:#EBECF0;
+  margin-left: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  overflow-y:hidden;
+  overflow-x: hidden;
+  display: inline-block;
+  min-height: 66px;
+  max-height: 470px;
+}
+
+.div-taskRange
+{
+  position: relative;
+  width: 282px;
+  min-width: 282px;
+  background-color:#EBECF0;
+  margin-left: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+
+  overflow-y:hidden;
+  overflow-x: hidden;
+  display: inline-block;
+  min-height: 66px;
+  max-height: 490px;
+}
+.div-userList,
+.div-taskList
+{
+  max-height: 370px;
+  overflow-y:auto;
+  margin-bottom: 10px;
+}
+
+.div-edituser
+{
+  min-height: 100px;
+  display: none;
+}
+
+
+.div-edituser-part
+{
+  width: 45%;
+}
+
+.div-user,
+.div-task
+{
+ padding: 5px;
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background-color:white;
+  border-radius: 5px;
+
+}
+.div-user
+{
+  margin-bottom: 10px;
+}
+
+.div-taskname
+{
+  max-width: 180px;
+  width: 180px;
+  display: inline-flex;
+  
+}
+
+.div-userlogin
+{
+  
+  max-width: 180px;
+  min-width: 180px;
+  width: 180px;
+  display: inline-flex;
+}
+
+
+.btn-ico
+{
+  padding: 2px;
+  float: right;
+  opacity: 0.1;
+  background-color: white;
+  border:none;
+}
+
+.btn-ico.pressed
+{
+  opacity: 1;
+
+}
+
+.btn-ico:hover
+{
+  opacity: 1;
+}
+
+.btn
+{
+  border-radius: 5px;
+  
+  margin-left: 12px;
+}
+.btn-submit,
+.btn-add
+{
+  display: block;
+  color: #5E6C84;
+  padding:4px;
+}
+.btn-submit:hover,
+.btn-add:hover
+{
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: #5E6C84; */
+  background-color: #0067A3;
+  color:#EBECF0;
+}
+
+.btn-add[disabled]
+{
+  display: block;
+  cursor: default;
+  color: rgb(218, 214, 214);
+  border:hidden;
+}
+
+.btn-add[disabled]:hover
+{
+  border:hidden;
+}
+
+body {
+
+  font-family: "Roboto Regular", Helvetica, Arial, sans-serif;
+}
+
+
+.div-footer
+{
+  display: flex;
+  background-color: #0067A3;
+  height: 55px;
+  align-items: center;
+}
+.div-footer-info
+{
+  color:white;
+  margin-left: 10px;
+}
+
+.div-author
+{
+  margin-left: auto; 
+  margin-right: 5px;
+}
+
+.addTaskInput
+{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 12px;
+  margin-right: 12px;
+  width:258px;
+  border:hidden;
+  padding:5px;
+  border-radius: 5px;
+}
+
+.addTaskInput:focus {
+  outline-width: 0;
+}
+
+
+/*Styling Selectbox*/
+
+.dropdown {
+  
+  display: none;
+  background-color: #fff;
+
+  transition: all .5s ease;
+  position: relative;
+  
+  color: #474747;
+  
+  text-align: left;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.dropdown .select {
+    cursor: pointer;
+    display: block;
+    
+}
+.dropdown .select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+
+.dropdown:active {
+    background-color: #f8f8f8
+}
+.fa
+{
+  transform: rotate(-90deg);
+  margin-right: 5px;
+}
+.dropdown.active .select > i {
+    transform: rotate(90deg)
+}
+.dropdown-menu {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    
+    margin-top: 1px;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9;
+    border:none;
+    font-size: 18px;
+}
+
+.dropdown-menu :not(.ul-dropdown-menu)
+{
+  left: 0;
+}
+
+ .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+} 
+ .dropdown-menu {
+    padding: 0;
+    list-style: none
+}
+.dropdown-menu li:hover {
+    background-color:#EBECF0;
+}
+.dropdown-menu li:active {
+    background-color: #EBECF0;
+}
+.img-userMenu
+{
+  margin-left:5px;
+  margin-top:5px;
+}
+.div-userMenu
+{
+  float: right;
+}
+
+.div-header
+{
+  height: 55px;
+  background-color: #0067A3;
+}
+
+.div-usermenu-image
+{
+  margin-top: 10px;
+  background-color: white;
+  color: white;
+  border-radius: 50%;
+  width: 36px;
+  float: right;
+}
+
+.fa-white
+{
+  color:white;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.ul-dropdown-menu
+{
+  position: fixed;
+  top: 55px;
+  right:0px;
+  width:200px;
+}
+
+.label-user-edit
+{
+  margin-top:5px
+}
+
+.input-user
+{
+  border:none;
+  outline: none;
+}
+
+.input-user:focus
+{
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.h1-welcome
+{
+  display: inline-block;
+  font-size: 30px;
+  margin-top:10px;
+  margin-left: 30px;
+  color: white;
+}
+
